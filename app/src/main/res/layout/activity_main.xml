@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.LoginActivity"
+        tools:layout_editor_absoluteY="73dp">
+
+    <EditText
+            android:id="@+id/user_name_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@+id/password_edit"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_edit"
+            />
+
+    <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit"
+            />
+
+    <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="20dp"
+            android:text="Clear"
+            app:layout_constraintEnd_toEndOf="@+id/password_edit"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit"
+            />
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="2dp"
+            android:text="UserName : "
+            app:layout_constraintBottom_toBottomOf="@+id/user_name_edit"
+            app:layout_constraintEnd_toStartOf="@+id/user_name_edit"
+            />
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="2dp"
+            android:text="Password : "
+            app:layout_constraintBottom_toBottomOf="@+id/password_edit"
+            app:layout_constraintEnd_toStartOf="@+id/login_btn"
+            />
+</android.support.constraint.ConstraintLayout>
